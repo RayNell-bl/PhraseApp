@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ShadeGrey">
+    <RelativeLayout
+        android:id="@+id/header_books"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:text="Книги"
+            android:textSize="24sp"
+            android:textColor="@color/White"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_books"
+        android:layout_above="@+id/icon_tray">
+        <LinearLayout
+            android:id="@+id/content_books"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/ShadeDark"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:id="@+id/icon_tray">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="goToPhrases"
+                android:background="@drawable/message" />
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="24dp"
+                android:id="@+id/book_btn"
+                android:background="@drawable/book" />
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="24dp"
+                android:onClick="goToAuthors"
+                android:background="@drawable/author" />
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="24dp"
+                android:onClick="addBooks"
+                android:background="@drawable/plus" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

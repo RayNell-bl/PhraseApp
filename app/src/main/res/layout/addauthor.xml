@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:id="@+id/name_author"
+        android:background="@drawable/name_background"
+        android:hint="Имя... "
+        android:textColorHint="@color/Grey"
+        android:textSize="20sp"
+        android:maxLength="32"
+        android:textColor="@color/White"
+        android:paddingLeft="8dp"
+        android:layout_centerHorizontal="true">
+    </EditText>
+    <DatePicker
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/born_author"
+        android:layout_below="@+id/name_author"
+        android:background="@drawable/name_background"
+        android:yearListSelectorColor="@color/White"
+        android:calendarTextColor="@color/White"
+        android:datePickerMode="calendar"
+        android:headerBackground="@color/ShadeDark"
+        android:textSize="16sp"
+        android:maxLength="32"
+        android:textColor="@color/White"
+        android:paddingLeft="8dp"
+        android:layout_centerHorizontal="true">
+    </DatePicker>
+    <DatePicker
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/dead_author"
+        android:layout_below="@+id/born_author"
+        android:background="@drawable/name_background"
+        android:yearListSelectorColor="@color/White"
+        android:calendarTextColor="@color/White"
+        android:datePickerMode="calendar"
+        android:headerBackground="@color/ShadeDark"
+        android:textSize="16sp"
+        android:maxLength="32"
+        android:textColor="@color/White"
+        android:paddingLeft="8dp"
+        android:layout_centerHorizontal="true">
+    </DatePicker>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/author_biography"
+        android:layout_below="@+id/dead_author"
+        android:background="@drawable/name_background"
+        android:hint="Биография... "
+        android:gravity="left"
+        android:textColorHint="@color/Grey"
+        android:textSize="20sp"
+        android:maxLength="32"
+        android:textColor="@color/White"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:layout_centerHorizontal="true">
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding ="8dp"
+        android:background="@color/DarkPink"
+        android:text="Добавить автора"
+        android:textSize="16sp"
+        android:textColor="@color/White"
+        android:layout_below="@+id/author_biography"
+        android:id="@+id/add_author"/>
+</RelativeLayout>
